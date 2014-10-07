@@ -24,9 +24,16 @@ func main() {
 		} else {
 			fmt.Printf("Error Type: %T", err)
 			fmt.Println("Error: ", err)
+			PrintErr(err)
+			charErr := Character{}
+			PrintErr(charErr)
 		}
 	} else {
 		character := NewCharacter(cfg)
 		fmt.Printf("Character Info...\n%v\n", character)
 	}
+}
+
+func PrintErr(err error) {
+	fmt.Printf("Error: %v\n", err)
 }

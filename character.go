@@ -64,3 +64,7 @@ func (c Character) String() string {
 	charTemplate := "Class: %v\nStrength: %v\nIntelligence: %v\nWisdom: %v\nDexterity: %v\nConstitution: %v\nCharisma: %v\n"
 	return fmt.Sprintf(charTemplate, strings.Title(c.Class), c.Strength, c.Intelligence, c.Wisdom, c.Dexterity, c.Constitution, c.Charisma)
 }
+
+func (c Character) Error() string {
+	return "This character has errors, or flaws if you will."
+}
