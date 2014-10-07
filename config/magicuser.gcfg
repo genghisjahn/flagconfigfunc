@@ -1,0 +1,5 @@
+;Config
+[class]
+Name = "magic user"
+MaxAbility = "intelligence"
+RollMethod = "r4d6"
