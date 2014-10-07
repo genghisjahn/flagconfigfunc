@@ -1,0 +1,5 @@
+;Config
+[class]
+Name = "figther"
+MaxAbility = "strength"
+RollMethod = "r1d20"

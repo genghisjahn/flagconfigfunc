@@ -1,0 +1,5 @@
+;Config
+[class]
+Name = "cleric"
+MaxAbility = "wisdom"
+RollMethod = "r3d6"
