@@ -22,7 +22,7 @@ func NewCharacter(cfg Config) Character {
 	result.Class = cfg.Class.Name
 
 	dieRoller := RollMethods[cfg.Class.RollMethod]
-
+	fmt.Printf("Roll Method: %v\n", cfg.Class.RollMethod)
 	scores := make([]int, 6, 6)
 	for k, _ := range scores {
 		scores[k], _ = dieRoller()
